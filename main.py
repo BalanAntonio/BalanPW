@@ -10,13 +10,15 @@ while True:
     ret, frame = cap.read()
     if not ret:
         break
+
+    frame = cv2.flip(frame,1)
  
     # Applica il filtro scelto
     if filtro == 'grigio':
         output = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     elif filtro == 'bordi':
         grigio = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-        output = cv2.Canny(grigio, 50, 150)
+        output = cv2.Canny(grigio, 20, 50)
     elif filtro == 'blur':
         output = cv2.GaussianBlur(frame, (21, 21), 0)
     elif filtro == 'termo':
