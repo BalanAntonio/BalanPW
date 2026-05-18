@@ -48,7 +48,7 @@ def apply_cartoon(frame):
     for _ in range(3):
         img = cv2.bilateralFilter(img, d=9, sigmaColor=75, sigmaSpace=75)
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-    edges = cv2.Canny(gray, threshold1=50, threshold2=150)
+    edges = cv2.Canny(gray, threshold1=10, threshold2=30)
     edges_inv = cv2.bitwise_not(edges)
     edges_colored = cv2.cvtColor(edges_inv, cv2.COLOR_GRAY2BGR)
     return cv2.bitwise_and(img, edges_colored)
