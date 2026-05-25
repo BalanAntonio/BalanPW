@@ -88,11 +88,11 @@ def apply_mirror(frame):
 FILTERS = {
     "normale":   lambda f: f.copy(),
     "grigio":    apply_grayscale,
-    "negativo":  apply_negative,
-    "sepia":     apply_sepia,
-    "heatmap":   apply_heatmap,
-    "cartoon":   apply_cartoon,
-    "pixelate":  apply_pixelate,
+    "neg":  apply_negative,
+    "schifo":     apply_sepia,
+    "heat":   apply_heatmap,
+    "cartone":   apply_cartoon,
+    "pixel":  apply_pixelate,
     "vignetta":  apply_vignette,
     "specchio":  apply_mirror,
 }

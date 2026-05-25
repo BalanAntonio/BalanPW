@@ -102,7 +102,7 @@ def draw_help(frame):
 
     lines = [
         "TASTI DISPONIBILI",
-        "─────────────────────",
+        "---------------------------------",
         "F / Freccia destra  — filtro successivo",
         "Freccia sinistra    — filtro precedente",
         "B  - blur sfondo on/off",
