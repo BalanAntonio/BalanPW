@@ -65,6 +65,7 @@ python3 main.py
 | `B` | Blur sfondo on/off (richiede volto in campo) |
 | `M` | Rilevamento movimento on/off |
 | `G` | Ghost effect (scia) on/off |
+| `C` | Cappello on/off |
 | `L` | Motion blur simulato on/off |
 | `R` | Avvia / ferma registrazione video (.mp4) |
 | `A` | Modalità automatica (cicla filtri ogni 4 s) |
